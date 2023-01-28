@@ -11,9 +11,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage : {
-        'automob': 'url('./src/assets/automb ')'
-      }
     },
   },
   plugins: [],
