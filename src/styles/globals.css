@@ -1,10 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Grenze:wght@400;500&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&family=Work+Sans&display=swap');
+
+
+:root {
+  --font-family: 'Grenze', serif;
+  --primarybackkground: #030303;
+  --secondarybackground: #FFFACA;
+  --primarytext: #393A32;
+  --secondarytext: #212222;
+  --backgroundtext: #0250890D;
+  --primary: #EFA535;
+
+}
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
+  cursor: pointer;
+}
+p , a {
+  font-family: 'Inter', sans-serif ;
+  color: black;
 }
 
 html,
@@ -20,4 +41,59 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+.content {
+  max-width: 1800px;
+  margin: 0 auto;
+}
+p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: black;
+
+}
+nav {
+  width: 100%;
+  background-color: var(--primarybackkground);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 64px;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+  box-shadow: inset 0px -1px 0px #000000;
+}
+nav p {
+  color: white;
+}
+/* .nav__logo {
+  width: 150px;
+  height: 76px;
+  object-fit: cover;
+} */
+/* .nav__logo img {
+  width: 100%;
+  height: auto;
+} */
+.nav__logo__content {
+  display: flex;
+  align-items: center;
+  gap: 101px;
+
+}
+.nav__logo__link {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+button {
+  background-color: #EFA535;
+  border-radius: 8px;
+  /* border: none; */
+  padding: 8px 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: white;
+  font-family: 'Inter', sans-serif;
 }
